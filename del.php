@@ -5,7 +5,7 @@
 
   $sql = "DELETE FROM free WHERE no = {$_GET['no']}";
   $result = mysqli_query($conn, $sql);
-
+  mysqli_close($close);
   if($result)//DELETE 성공 = 1
   {//삭제 성공 시 첫 페이지로 이동
     echo "<script>
