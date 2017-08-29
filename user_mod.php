@@ -6,8 +6,7 @@
   $sql = "SELECT * FROM user WHERE id = '{$_SESSION['id']}'";
   $result = mysqli_query($conn, $sql);
   $arr = mysqli_fetch_assoc($result);
-  mysqli_free_result($result);
-  mysqli_close($conn);
+
 ?>
 <p align="center"> 회원 정보 수정 </p>
 <form method="POST" action="user_mod_proc.php">

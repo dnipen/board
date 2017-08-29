@@ -1,5 +1,35 @@
 <?php session_start(); ?>
 <html>
+<head>
+  <style>
+    table {
+      text-align: center;
+    }
+    table tr {
+      cursor: hand;
+    }
+    table tr th {
+      cursor: default;
+    }
+    .login{
+      border: 1px solid #999999;
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 20%;
+    }
+    .board{
+      border: 1px solid #999999;
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 300px;
+      width: 60%;
+    }
+    .page{
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
 
 <?php
@@ -22,7 +52,7 @@
     <?php
     exit;
   }
-
+/* 주석 추가 */
   echo "<div class='login'>{$_SESSION['id']} 로그인";
   echo "<input type='button'
           onclick=\"location.href='logout.php'\" value='로그아웃'>
